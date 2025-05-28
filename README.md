@@ -2,8 +2,8 @@
 
 A modular, microservices-based subscription model built using **Node.js**, **NestJS**, **Kafka**, **PostgreSQL**, and **MongoDB**.
 
-## 🧱 Architecture Overview
-![diagram-export-5-28-2025-10_28_16-AM](https://github.com/user-attachments/assets/7745083a-b970-48f4-9364-79c8ac64b88c)
+## 🧱 Architecture Overview!
+![diagram-export-5-28-2025-5_57_26-PM](https://github.com/user-attachments/assets/4c4efb7a-9ae2-4335-94d9-a83082444cd7)
 This project is divided into three microservices:
 
 ### 1. 🧾 Subscriptions Service (REST)
