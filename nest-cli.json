@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/subscription-service/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/subscription-service/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/subscription-service",
+  "projects": {
+    "audit-log-consumer": {
+      "type": "application",
+      "root": "apps/audit-log-consumer",
+      "entryFile": "main",
+      "sourceRoot": "apps/audit-log-consumer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/audit-log-consumer/tsconfig.app.json"
+      }
+    },
+    "notification-consumer": {
+      "type": "application",
+      "root": "apps/notification-consumer",
+      "entryFile": "main",
+      "sourceRoot": "apps/notification-consumer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notification-consumer/tsconfig.app.json"
+      }
+    },
+    "notification-service": {
+      "type": "application",
+      "root": "apps/notification-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/notification-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notification-service/tsconfig.app.json"
+      }
+    },
+    "shared": {
+      "type": "library",
+      "root": "libs/shared",
+      "entryFile": "index",
+      "sourceRoot": "libs/shared/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/shared/tsconfig.lib.json"
+      }
+    },
+    "subscription-service": {
+      "type": "application",
+      "root": "apps/subscription-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/subscription-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/subscription-service/tsconfig.app.json"
+      }
+    }
+  }
+}
